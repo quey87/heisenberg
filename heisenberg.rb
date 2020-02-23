@@ -10,7 +10,10 @@ elsif b == true
     system("cls")
 end
 
-puts"
+if a == true
+    system("figlet Heisenberg")
+else
+    puts"
 ██╗  ██╗███████╗██╗███████╗███████╗███╗   ██╗██████╗ ███████╗██████╗  ██████╗ 
 ██║  ██║██╔════╝██║██╔════╝██╔════╝████╗  ██║██╔══██╗██╔════╝██╔══██╗██╔════╝ 
 ███████║█████╗  ██║███████╗█████╗  ██╔██╗ ██║██████╔╝█████╗  ██████╔╝██║  ███╗
@@ -18,7 +21,8 @@ puts"
 ██║  ██║███████╗██║███████║███████╗██║ ╚████║██████╔╝███████╗██║  ██║╚██████╔╝
 ╚═╝  ╚═╝╚══════╝╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝ 
 BY : QUEY7Z   |  TERMUX - LİNUX - WİNDOWS KULLANCILARI İÇİN TASARLANDI.
-======================================================================================"
+================================================================================="
+end
 
 def dinleme
     dosya = File.open("dinleme_ayarlari.txt", "w")
@@ -34,11 +38,9 @@ def msfvenom
     sistem = OS.windows?
     sistem2 = OS.linux?
     uyari = "MSFCONSOLE ARAÇLARI SADECE LİNUX VE TERMUX KULLANICILARI İÇİNDİR. WİNDOWS KULLANICILARI YARARLANAMAZ.".red
-
-    if sistem2 == true
-        system("clear")
-    
-    elsif sistem == true
+    system("clear")
+    system("cls")
+    if sistem == true
         system("cls")
         puts uyari
         sleep(3)
